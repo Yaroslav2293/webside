@@ -12,7 +12,7 @@ $('.sliders-images').slick({
       }
     },
     {
-      breakpoint: 400,
+      breakpoint: 500,
       settings: {
         dots: false,
       }
