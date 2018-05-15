@@ -8,6 +8,12 @@ $('.sliders-images').slick({
     {
       breakpoint: 600,
       settings: {
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
         dots: false,
       }
     }
@@ -34,7 +40,7 @@ $('.sl-sliders').slick({
   slidesToScroll: 1,
   swipe: false,
   asNavFor: '.sl-border',
-  appendArrows: '.arrow',
+  appendArrows: '.sl-sliders',
   nextArrow: '<div class="slick-arrow prev-arrows"></div>',
   prevArrow: '<div class="slick-arrow next-arrows"></div>',
   responsive: [
@@ -43,8 +49,23 @@ $('.sl-sliders').slick({
       settings: {
         swipe: true,
         fade: false,
+        dots: true,
       }
-    }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        swipe: true,
+        fade: false,
+        dots: false,
+      }
+    },
   ]
 });
 
@@ -64,7 +85,7 @@ $('.sl-slider').slick({
   asNavFor: '.sl-content',
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
         arrows: true,
         slidesToShow: 2,
@@ -72,11 +93,30 @@ $('.sl-slider').slick({
       }
     },
     {
-      breakpoint: 700,
+      breakpoint: 640,
+      settings: {
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 575,
       settings: {
         arrows: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
       }
     }
   ]
