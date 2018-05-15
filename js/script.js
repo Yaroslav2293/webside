@@ -132,9 +132,11 @@ $(document).ready(function() {
 });
 
 //BUR
+
   //nav
     $(function(){
-      $('.burger').on('click', function(){
+      $('#nav-buttons').on('click', function(){
+        $(this).toggleClass('open');
         $('#nav').slideToggle(300, function(){
           if($(this).css('display') === 'none'){
             $(this).removeAttr('style');
@@ -148,16 +150,21 @@ $(document).ready(function() {
     $('#nav li.menu-item-has-children a').click( function(event){
       if ($('#nav li ul').css('display') == 'none'){
         $('#nav li ul').css('display', 'block').animate({opacity: 1}, 400);
-        $('.menu-item-has-children > a > span').css('display', 'block').animate({opacity: 1}, 400);
+        $('.menu-item-has-children > a > span:first-child').css('display', 'block').animate({opacity: 1}, 400);
+        $('.menu-item-has-children > a').css('background-color', '#fff');
+        $('.menu-item-has-children > a').css('color', '#144750');
       }
       else
       if ($('#nav li ul').css('display') == 'block'){
         $('#nav li ul').animate({opacity: 0}, 400, function(){
           $(this).css('display', 'none');
         });
-        $('.menu-item-has-children > a > span').animate({opacity: 0}, 400, function(){
+        $('.menu-item-has-children > a > span:first-child').animate({opacity: 0}, 400, function(){
           $(this).css('display', 'none');
         });
+        $('.menu-item-has-children > a').css('background-color', '#144750');
+        $('.menu-item-has-children > a').css('color', '#fff');
+        $(this).removeAttr('style');
       }
     });
   //submenu end
