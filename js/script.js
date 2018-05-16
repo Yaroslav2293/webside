@@ -1,9 +1,6 @@
 $('.sliders-images').slick({
   infinite: true,
   dots: true,
-  /*autoplay: true,*/
-  /*speed: 500,
-  autoplaySpeed: 2000,*/
   responsive: [
     {
       breakpoint: 600,
@@ -77,8 +74,6 @@ $('.sl-content').slick({
 $('.sl-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
   focusOnSelect: true,
   nextArrow: '<div class="slick-arrow arrow-next"></div>',
   prevArrow: '<div class="slick-arrow arrow-prev"></div>',
@@ -125,15 +120,21 @@ $('.sl-slider').slick({
 $('.slider-creating-a-business').slick({
 	dots: true,
 	arrows: false,
+  slidesToShow: 2,
+  responsive: [
+    {
+      breakpoint: 460,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 $(document).ready(function() {
   $('select').niceSelect();
 });
 
-//BUR
-
-  //nav
     $(function(){
       $('#nav-buttons').on('click', function(){
         $(this).toggleClass('open');
@@ -144,9 +145,8 @@ $(document).ready(function() {
         });
       });
     });
-  //nav end
 
-  //submenu
+  
     $('#nav li.menu-item-has-children a').click( function(event){
       if ($('#nav li ul').css('display') == 'none'){
         $('#nav li ul').css('display', 'block').animate({opacity: 1}, 400);
@@ -167,5 +167,3 @@ $(document).ready(function() {
         $(this).removeAttr('style');
       }
     });
-  //submenu end
-//BUR and
