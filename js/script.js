@@ -123,7 +123,7 @@ $('.slider-creating-a-business').slick({
   slidesToShow: 2,
   responsive: [
     {
-      breakpoint: 460,
+      breakpoint: 575,
       settings: {
         slidesToShow: 1
       }
@@ -135,6 +135,8 @@ $(document).ready(function() {
   $('select').niceSelect();
 });
 
+//BUR
+  //nav
     $(function(){
       $('#nav-buttons').on('click', function(){
         $(this).toggleClass('open');
@@ -145,8 +147,9 @@ $(document).ready(function() {
         });
       });
     });
+  //nav end
 
-  
+  //submenu
     $('#nav li.menu-item-has-children a').click( function(event){
       if ($('#nav li ul').css('display') == 'none'){
         $('#nav li ul').css('display', 'block').animate({opacity: 1}, 400);
@@ -167,3 +170,5 @@ $(document).ready(function() {
         $(this).removeAttr('style');
       }
     });
+  //submenu end
+//BUR and
