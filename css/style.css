@@ -1411,7 +1411,7 @@ footer {
   }
 
   .tel {
-    margin: 0 10px;
+    margin: 0 10px 0 0;
   }
 
   .number {
@@ -2296,7 +2296,7 @@ footer {
   }
 
   .img-slider {
-    background-image: url(../img/triangles2.png); /* Ярик добавив нову картинку */
+    background-image: url(../img/triangles2.png);
     background-repeat: no-repeat;
     height: 510px;
   }
