@@ -94,7 +94,7 @@ nav li:last-child {
 #nav > li > a:after {
   content: '';
   position: absolute;
-  top: -38px;
+  top: -39px;
   left: 0;
   width: 0%;
   height: 3px;
@@ -2000,11 +2000,9 @@ footer {
   header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 30px 0 35px;
   }
 
   .logo {
-    margin: 0 auto 25px;
     max-width: 560px;
     width: 100%;
     font-size: 28px;
@@ -2141,6 +2139,9 @@ footer {
   }
   .prev-arrows {
     left: -20%;
+  }
+  .slider-text {
+    margin-left: 80px;
   }
 }
 
@@ -2280,7 +2281,7 @@ footer {
   }
 
   .slider-text {
-    margin-left: 35px;
+    margin-left: 45px;
   }
 }
 
@@ -2311,6 +2312,7 @@ footer {
 
   .slider-text {
     margin-left: 20px;
+    margin-top: 300px;
   }
   
   .title-website-promotion h3 {
