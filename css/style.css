@@ -17,6 +17,10 @@ a,a:hover {
   text-decoration: none;
 }
 
+body {
+  position: relative;
+}
+
 .global-wrapper {
   margin: 0 auto;
   max-width: 1920px;
@@ -530,6 +534,7 @@ nav li:last-child {
 .services-block {
   text-align: center;
   border: 1px solid #e8e8e8;
+  margin: 0 -1px -1px 0;
 }
 
 .our-services-content {
@@ -1572,6 +1577,11 @@ footer {
   .our-services-content div {
     max-width: 280px;
   }
+
+  #nav li a.nav-active {
+    background-color: #fff;
+    color: #144750;
+  }
   
   #nav-buttons {
     display: inline-block;
@@ -2003,6 +2013,7 @@ footer {
   }
 
   .logo {
+    margin: 0;
     max-width: 560px;
     width: 100%;
     font-size: 28px;
@@ -2333,3 +2344,137 @@ footer {
     height: 510px;
   }
 }
+
+
+
+
+/*BUR popup-price*/
+  body.menu-opened {
+    overflow-y: hidden;
+  }
+
+  .overlay {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .25s ease-in-out;
+  }
+
+  .overlay.active {
+    display: block;
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+    z-index: 1500;
+  }
+
+
+  #popup {
+    display: none;
+    position: fixed;
+    left: 50%; 
+    top: 50%;
+    width: 100%;
+    max-width: 1110px;
+    height: 582px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    z-index: 2000;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .popup-form-contein {
+    display: flex;
+    align-items: center;
+    background-image: url("../img/popap.jpg");
+    background-repeat: no-repeat;
+    padding: 75px 10px;
+  }
+
+  .popup-form {
+    position: relative;
+    left: 63%;
+  }
+  
+  #popup h3 {
+    margin-bottom: 50px;
+    
+  }
+
+  #popup input {
+    width: 315px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 25px;
+  }
+
+  form div label {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 14px;
+    color: #c0c0c0;
+  }
+
+  #popup input:last-child {
+    background-color: #00af75
+  }
+
+  #popup .price-button {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 14px;
+    width: 315px;
+    height: 50px;
+    margin-top: 50px;
+    color: #ffffff;
+  }
+
+  #popup-close {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url(../img/popup-close.png);
+  }
+  
+
+  
+  @media screen and (max-width: 980px) {
+    .popup-form {
+      left: 22%;
+    }
+    #popup {
+      width: 585px;
+    }
+  }
+    
+  @media screen and  (max-width: 600px) {
+    #popup {
+      text-align: center;
+      max-width: 310px;
+    }
+    #popup h3 {
+      font-size: 22px;
+    }
+    .popup-form {
+      left: 2%;
+    }
+    #popup input {
+      width: 280px;
+    }
+    #popup .price-button {
+      width: 280px;
+    }
+  }

@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- BUR popup-price -->
+  <div class="overlay"></div>
+  <!-- BUR end -->
 
   <!--[if lt IE 11]>
 <div style='position: relative; z-index: 200;'>
@@ -26,7 +29,7 @@
   </div>
 </div>
 <![endif]-->
-
+  
   <div class="global-wrapper">
   <header>
     <div id="nav-buttons">
@@ -64,11 +67,11 @@
        </select>
     </div>
     <div class="tel">
-      <p class="number">+38 096 097 66 58</p>
+      <p class="number">+38 097 029 0001</p>
       <p class="email">info@webside.com.ua</p>
     </div>
     <div class="call-me">
-      <a href="#"><span>Зателефонуйте мені</span></a>
+      <a id="popup-buttons" href="#"><span>Зателефонуйте мені</span></a>
     </div>
   </header>
   <main>
@@ -127,6 +130,9 @@
     <section>
       <div class="title-our-services container">
         <h3>Наші послуги</h3>
+        <!-- BUR popup-price -->
+        <!-- <a id="popup-price-link" href="#">popup-price-link</a> -->
+        <!-- BUR end -->
       </div>
       <div class="our-services container">
         <div class="row our-services-content">
@@ -251,7 +257,7 @@
         </div>
       </div>
         <div class="calculate-the-cost container">
-          <a href="#">Прорахувати вартість робіт</a>
+          <a id="popup-buttons" href="#">Прорахувати вартість робіт</a>
         </div>
     </section>
     <section>
@@ -455,7 +461,7 @@
 
           </div>
           <div class="team-calculate"> 
-            <a href="#">Прорахувати вартість робіт</a>
+            <a id="popup-buttons" href="#">Прорахувати вартість робіт</a>
           </div>
         </div>
       </div>
@@ -558,7 +564,7 @@
             <img src="img/planshet.png" alt="">
           </div>
         <div class="cost-of-work container">
-          <a href="#">Прорахувати вартість робіт</a>
+          <a id="popup-buttons" href="#">Прорахувати вартість робіт</a>
         </div>
         </div>
       </section>
@@ -599,6 +605,28 @@
     </div>
   </footer>
   </div>
+  
+  <!-- BUR popup-price -->
+    <div id="popup">
+      <div id="popup-close"></div>
+      <div class="popup-form-contein">
+        <!-- <img src="img/popap.jpg" alt=""> -->
+        <div class="popup-form">
+        <h3>Залишіть контактні дані<br> для зворотнього звязку</h3>
+        <form action="#" method="post">
+          <div><label for="">Ім'я</label></div>
+          <input type="text" name="name">
+          <div><label for="">Email</label></div>
+          <input type="email" name="email">
+          <div><label for="">Номер телефону</label></div>
+          <input type="tel" name="phone"><br>
+          <input class="price-button" type="submit" name="button" value="Підтвердити">
+        </form>
+        </div>
+      </div>
+    </div>
+    <!-- BUR end -->
+  
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/slick.js"></script>
