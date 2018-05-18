@@ -40,6 +40,8 @@ body {
 
 header {
   position: fixed;
+  margin: 0 auto;
+  max-width: 1920px;
   width: 100%;
   background-color: #ffffff;
   z-index: 500;
@@ -56,6 +58,10 @@ header {
       flex-wrap: nowrap;
   -webkit-box-shadow: 4.95px 4.95px 14px 0px rgba(189, 189, 189, 0.25);
           box-shadow: 4.95px 4.95px 14px 0px rgba(189, 189, 189, 0.25);
+}
+
+main {
+  padding-top: 100px;
 }
 
 .logo {
@@ -516,7 +522,7 @@ nav li:last-child {
 
 /*Our Services*/
 
-.title-our-services h3 {
+.title-our-services h1 {
   font-family: 'Roboto';
   font-weight: 800;
   font-size: 30px;
@@ -1029,7 +1035,7 @@ nav li:last-child {
  padding-bottom: 60px;
 }
 
-.creating-a-business h3 {
+.creating-a-business h2 {
   padding-top: 70px;
   margin-bottom: 20px;
   font-family: 'Roboto';
@@ -1193,7 +1199,7 @@ nav li:last-child {
 
 /* Комплексне просування сайту */
 
-.title-website-promotion h3 {
+.title-website-promotion h2 {
   font-family: 'Roboto';
   font-weight: 800;
   font-size: 30px;
@@ -1361,6 +1367,108 @@ footer {
   color: #fefefe;
 }
 
+body.menu-opened {
+  overflow-y: hidden;
+}
+
+.overlay {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all .25s ease-in-out;
+}
+
+.overlay.active {
+  display: block;
+  visibility: visible;
+  position: fixed;
+  opacity: 1;
+  z-index: 1500;
+}
+
+
+#popup {
+  display: none;
+  position: fixed;
+  left: 50%; 
+  top: 50%;
+  width: 100%;
+  max-width: 1110px;
+  height: 582px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  z-index: 2000;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.popup-form-contein {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/popap.jpg");
+  background-repeat: no-repeat;
+  padding: 75px 10px;
+}
+
+.popup-form {
+  position: relative;
+  left: 63%;
+}
+
+#popup h3 {
+  margin-bottom: 50px;
+  
+}
+
+#popup input {
+  width: 315px;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 25px;
+}
+
+form div label {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  color: #c0c0c0;
+}
+
+#popup input:last-child {
+  background-color: #00af75
+}
+
+#popup .popup-button {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  width: 315px;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#popup-close {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url(../img/popup-close.png);
+}
+
 /* Адаптація */
 
 @media screen and (max-width: 1800px) {
@@ -1524,7 +1632,7 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  .creating-a-business h3 {
+  .creating-a-business h2 {
     font-size: 30px;
   }
 
@@ -1691,6 +1799,17 @@ footer {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 980px) {
+    /*BUR popup*/
+    .popup-form {
+      left: 22%;
+    }
+    #popup {
+      width: 585px;
+    }
+    /*BUR end*/
+  }
 
 @media screen and (max-width: 930px) {
   .creating-a-business-content .business-blocks {
@@ -1896,7 +2015,7 @@ footer {
     margin: 0 auto;
   }
 
-  .title-our-services h3 {
+  .title-our-services h1 {
     margin-bottom: 40px;
   }
 }
@@ -1935,7 +2054,7 @@ footer {
     font-size: 12px;
   }
   /*Block v slider and*/
-  .creating-a-business h3 {
+  .creating-a-business h2 {
     font-size: 24px;
   }
   
@@ -1947,11 +2066,7 @@ footer {
     font-size: 18px;
   }
 
-  .creating-a-business h3 {
-    font-size: 24px;
-  }
-
-  .title-website-promotion h3 {
+  .title-website-promotion h2 {
     font-size: 24px;
   }
 
@@ -2003,6 +2118,25 @@ footer {
     top: 55%;
     left: 91%;
   }
+
+  /*BUR popup*/
+  #popup {
+    text-align: center;
+    max-width: 310px;
+  }
+  #popup h3 {
+    font-size: 22px;
+  }
+  .popup-form {
+    left: 2%;
+  }
+  #popup input {
+    width: 280px;
+  }
+  #popup .popup-button {
+    width: 280px;
+  }
+  /*BUR end*/
 }
 
 @media screen and (max-width: 560px) {
@@ -2175,7 +2309,7 @@ footer {
     padding-top: 40px;
   }
 
-  .title-our-services h3 {
+  .title-our-services h1 {
     padding-top: 35px;
     padding-bottom: 40px;
     margin: 0;
@@ -2326,7 +2460,7 @@ footer {
     margin-top: 300px;
   }
   
-  .title-website-promotion h3 {
+  .title-website-promotion h2 {
     font-size: 26px;
   }
   
@@ -2344,137 +2478,3 @@ footer {
     height: 510px;
   }
 }
-
-
-
-
-/*BUR popup-price*/
-  body.menu-opened {
-    overflow-y: hidden;
-  }
-
-  .overlay {
-    display: none;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all .25s ease-in-out;
-  }
-
-  .overlay.active {
-    display: block;
-    visibility: visible;
-    position: fixed;
-    opacity: 1;
-    z-index: 1500;
-  }
-
-
-  #popup {
-    display: none;
-    position: fixed;
-    left: 50%; 
-    top: 50%;
-    width: 100%;
-    max-width: 1110px;
-    height: 582px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
-    z-index: 2000;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-  }
-
-  .popup-form-contein {
-    display: flex;
-    align-items: center;
-    background-image: url("../img/popap.jpg");
-    background-repeat: no-repeat;
-    padding: 75px 10px;
-  }
-
-  .popup-form {
-    position: relative;
-    left: 63%;
-  }
-  
-  #popup h3 {
-    margin-bottom: 50px;
-    
-  }
-
-  #popup input {
-    width: 315px;
-    border: none;
-    border-bottom: 1px solid #d6d6d6;
-    margin-bottom: 25px;
-  }
-
-  form div label {
-    font-family: "Raleway";
-    font-weight: 500;
-    font-size: 14px;
-    color: #c0c0c0;
-  }
-
-  #popup input:last-child {
-    background-color: #00af75
-  }
-
-  #popup .price-button {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 14px;
-    width: 315px;
-    height: 50px;
-    margin-top: 50px;
-    color: #ffffff;
-  }
-
-  #popup-close {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-image: url(../img/popup-close.png);
-  }
-  
-
-  
-  @media screen and (max-width: 980px) {
-    .popup-form {
-      left: 22%;
-    }
-    #popup {
-      width: 585px;
-    }
-  }
-    
-  @media screen and  (max-width: 600px) {
-    #popup {
-      text-align: center;
-      max-width: 310px;
-    }
-    #popup h3 {
-      font-size: 22px;
-    }
-    .popup-form {
-      left: 2%;
-    }
-    #popup input {
-      width: 280px;
-    }
-    #popup .price-button {
-      width: 280px;
-    }
-  }

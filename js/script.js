@@ -170,8 +170,8 @@ $(document).ready(function() {
     });
   //submenu end
 
-  //BUR popup-price
-    $('a#popup-buttons').click( function(event){
+  //popup
+    $('a.popup-buttons').click( function(event){
       event.preventDefault();
       $('.overlay').fadeIn(400,function(){
           $('.overlay').addClass('active');
@@ -190,4 +190,15 @@ $(document).ready(function() {
       });
     });
   //pop-up end
+
+  //Плавные якоря
+  $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 100;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+  });
+  //Плавные якоря end
 //BUR and

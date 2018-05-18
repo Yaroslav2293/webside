@@ -10,11 +10,19 @@
   <link rel="stylesheet" href="css/nice-select.css">
   <link rel="stylesheet" href="css/fons.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47171642-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47171642-1');
+</script>
 </head>
 <body>
-  <!-- BUR popup-price -->
+  
   <div class="overlay"></div>
-  <!-- BUR end -->
 
   <!--[if lt IE 11]>
 <div style='position: relative; z-index: 200;'>
@@ -41,18 +49,18 @@
     <div class="logo">
       <a href="#">WebSide <span>Company</span></a>
     </div>
-    <nav>
+    <nav id="menu">
      
         <ul id="nav">
-          <li><a href="#">Про нас</a></li>
+          <li><a href="#about-us">Про нас</a></li>
           <li class="menu-item-has-children">
             <a href="#">Послуги<span></span><span></span></a>
             <ul>
-              <li><a href="#">Вивід бізнесу в Інтернет</a></li>
-              <li><a href="#">Комплексна розробка веб-сайтів під ключ</a></li>
-              <li><a href="#">Просування і реклама</a></li>
-              <li><a href="#">Веб дизайн/редизайн</a></li>
-              <li><a href="#">Аудит</a></li>
+              <li><a class="popup-buttons" href="#">Вивід бізнесу в Інтернет</a></li>
+              <li><a href="#creating-business-site">Комплексна розробка веб-сайтів під ключ</a></li>
+              <li><a class="popup-buttons" href="#">Просування і реклама</a></li>
+              <li><a class="popup-buttons" href="#">Веб дизайн/редизайн</a></li>
+              <li><a class="popup-buttons" href="#">Аудит</a></li>
             </ul>
           </li>
           <li><a href="#">Контакти</a></li>
@@ -71,7 +79,7 @@
       <p class="email">info@webside.com.ua</p>
     </div>
     <div class="call-me">
-      <a id="popup-buttons" href="#"><span>Зателефонуйте мені</span></a>
+      <a class="popup-buttons" href="#"><span>Зателефонуйте мені</span></a>
     </div>
   </header>
   <main>
@@ -129,10 +137,7 @@
     </section>
     <section>
       <div class="title-our-services container">
-        <h3>Наші послуги</h3>
-        <!-- BUR popup-price -->
-        <!-- <a id="popup-price-link" href="#">popup-price-link</a> -->
-        <!-- BUR end -->
+        <h1>Створення і Розробка сайтів | Просування комерційних проектів в інтереті</h1>
       </div>
       <div class="our-services container">
         <div class="row our-services-content">
@@ -257,7 +262,7 @@
         </div>
       </div>
         <div class="calculate-the-cost container">
-          <a id="popup-buttons" href="#">Прорахувати вартість робіт</a>
+          <a class="popup-buttons" href="#">Прорахувати вартість робіт</a>
         </div>
     </section>
     <section>
@@ -461,15 +466,15 @@
 
           </div>
           <div class="team-calculate"> 
-            <a id="popup-buttons" href="#">Прорахувати вартість робіт</a>
+            <a class="popup-buttons" href="#">Прорахувати вартість робіт</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="creating-business-site">
       <div class="creating-a-business container">
-        <h3>Створення сайту для Бізнесу</h3>
+        <h2>Створення сайту для Бізнесу</h2>
       </div>
       <div class="creating-a-business-content container">
         <div class="row blocks-container">
@@ -477,31 +482,31 @@
             <img src="img/icon30.png" alt="">
             <h4>Лендінг Сторінка</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="col-md-4 business-blocks">
             <img src="img/icon31.png" alt="">
             <h4>Корпоративний сайт</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="col-md-4 business-blocks">
             <img src="img/icon32.png" alt="">
             <h4>Cайт каталог</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="col-md-4 business-blocks">
             <img src="img/icon33.png" alt="">
             <h4>Інтернет магазин</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="col-md-4 business-blocks">
             <img src="img/icon34.png" alt="">
             <h4>Індивідуальна система</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
         </div>
       </div>
@@ -513,31 +518,31 @@
             <img src="img/icon30.png" alt="">
             <h4>Лендінг Сторінка</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="business-blocks">
             <img src="img/icon31.png" alt="">
             <h4>Корпоративний сайт</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="business-blocks">
             <img src="img/icon32.png" alt="">
             <h4>Cайт каталог</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="business-blocks">
             <img src="img/icon33.png" alt="">
             <h4>Інтернет магазин</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           <div class="business-blocks">
             <img src="img/icon34.png" alt="">
             <h4>Індивідуальна система</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut odi tempora incidu nmagnam.</p>
-            <a href="#">Дізнатися більше</a>
+            <a class="popup-buttons" href="#">Дізнатися більше</a>
           </div>
           
         </div>
@@ -545,31 +550,31 @@
     <!-- Block v slider and -->
     </section>
 
-      <section class="background-f6f6f6">
+      <section id="сomprehensive-website-promotion" class="background-f6f6f6">
         <div class="title-website-promotion container">
-          <h3>Комплексне просування сайту</h3>
+          <h2>Комплексне просування сайту</h2>
         </div>
         <div class="row container">
           <div class="col-md-5 col-sm-7 comprehensive">
             <h4>Комплексне просування сайту:</h4>
-            <p><a href="#">Пошукова оптимизація сайта(SEO)</a></p>
-            <p><a href="#">Просування в соціальних мережах (SMM)</a></p>
-            <p><a href="#">Контекстна реклама (PPC)</a></p>
-            <p><a href="#">Написання продаючих текстів (Копірайтинг)</a></p>
-            <p><a href="#">Розкрутка соціальних акаунтів</a></p>
-            <p><a href="#">Купівля реклами у блогерів, відомих фахівців.</a></p>
-            <p><a href="#">Фінансова Звітність і прогнозування результатів</a></p>
+            <p><a href="#сomprehensive-website-promotion">Пошукова оптимизація сайта(SEO)</a></p>
+            <p><a href="#сomprehensive-website-promotion">Просування в соціальних мережах (SMM)</a></p>
+            <p><a href="#сomprehensive-website-promotion">Контекстна реклама (PPC)</a></p>
+            <p><a href="#сomprehensive-website-promotion">Написання продаючих текстів (Копірайтинг)</a></p>
+            <p><a href="#сomprehensive-website-promotion">Розкрутка соціальних акаунтів</a></p>
+            <p><a href="#сomprehensive-website-promotion">Купівля реклами у блогерів, відомих фахівців.</a></p>
+            <p><a href="#сomprehensive-website-promotion">Фінансова Звітність і прогнозування результатів</a></p>
           </div>
           <div class="planshet col-md-7">
             <img src="img/planshet.png" alt="">
           </div>
         <div class="cost-of-work container">
-          <a id="popup-buttons" href="#">Прорахувати вартість робіт</a>
+          <a class="popup-buttons" href="#">Прорахувати вартість робіт</a>
         </div>
         </div>
       </section>
 
-      <section class="fon-pronas">
+      <section id="about-us" class="fon-pronas">
         <div class="row container">
 
         <div class="col-md-8 pro-nas container">
@@ -581,51 +586,48 @@
         </div>
       </section>
   </main>
-  <footer>
+  <footer id="footer">
     <div class="row container footer-content">
       <div class="col-lg-2 col-md-2 col-sm-3">
         <h5>Про нас</h5>
-        <p><a href="#">Команда</a></p>
-        <p><a href="#">Відгуки</a></p>
-        <p><a href="#">Наші клієнти</a></p>
+        <p><a href="#footer">Команда</a></p>
+        <p><a href="#footer">Відгуки</a></p>
+        <p><a href="#footer">Наші клієнти</a></p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-2  offset-md-2 offset-lg-2">
         <h5>Послуги</h5>
-        <p><a href="#">Вивід бізнесу в Інтернет</a></p>
-        <p><a href="#">Комплексна розробка веб - сайтів під ключ</a></p>
-        <p><a href="#">Просування і Реклама</a></p>
-        <p><a href="#">Веб дизайн/редизайн</a></p>
-        <p><a href="#">Аудит</a></p>
+        <p><a href="#footer">Вивід бізнесу в Інтернет</a></p>
+        <p><a href="#footer">Комплексна розробка веб - сайтів під ключ</a></p>
+        <p><a href="#footer">Просування і Реклама</a></p>
+        <p><a href="#footer">Веб дизайн/редизайн</a></p>
+        <p><a href="#footer">Аудит</a></p>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-3 offset-lg-2 offset-md-1">
         <h5>Контакти</h5>
         <p>+38 096 097 66 58</p>
-        <p><a href="#">info@webside.com.ua</a></p>
+        <p><a href="#footer">info@webside.com.ua</a></p>
       </div>
     </div>
   </footer>
   </div>
   
-  <!-- BUR popup-price -->
     <div id="popup">
       <div id="popup-close"></div>
       <div class="popup-form-contein">
-        <!-- <img src="img/popap.jpg" alt=""> -->
         <div class="popup-form">
         <h3>Залишіть контактні дані<br> для зворотнього звязку</h3>
         <form action="#" method="post">
-          <div><label for="">Ім'я</label></div>
-          <input type="text" name="name">
-          <div><label for="">Email</label></div>
-          <input type="email" name="email">
-          <div><label for="">Номер телефону</label></div>
-          <input type="tel" name="phone"><br>
-          <input class="price-button" type="submit" name="button" value="Підтвердити">
+          <div><label>Ім'я</label></div>
+          <input type="text" name="name" required>
+          <div><label>Email</label></div>
+          <input type="email" name="email" required>
+          <div><label>Номер телефону</label></div>
+          <input type="tel" name="phone" required><br>
+          <input class="popup-button" type="submit" value="Підтвердити">
         </form>
         </div>
       </div>
     </div>
-    <!-- BUR end -->
   
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/bootstrap.js"></script>
